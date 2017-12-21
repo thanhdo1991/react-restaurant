@@ -8,7 +8,7 @@ import cookie from 'react-cookies'
 // Data.
 import FoodAPI from '../api';
 
-export default class AddFood extends Component {
+export default class FoodAdd extends Component {
   constructor(props) {
     super(props);
     this.state = {

@@ -3,9 +3,9 @@ import { render } from 'react-dom'
 import {BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // Components.
-import ListFood from './components/ListFood'
-import AddFood from './components/AddFood'
-import EditFood from './components/EditFood';
+import FoodList from './components/FoodList'
+import FoodAdd from './components/FoodAdd'
+import FoodEdit from './components/FoodEdit';
 
 import './css/reset.css'
 import './css/base.css'
@@ -27,10 +27,10 @@ render((
     <div className="page-wrapper">
       <Header />
       <Switch>
-        <Route path="/" exact component={ListFood}/>
-        <Route path="/add" exact component={AddFood}/>
-        <Route path="/:id/edit" component={EditFood}/>
-        <Route component={pageNotFound}/>
+        <Route path="/" exact component={FoodList}/>
+        <Route path="/add" exact component={FoodAdd}/>
+        <Route path="/:id/edit" component={FoodEdit}/>
+        <Route component={pageNotFound} />
       </Switch>
       <Footer />
     </div>
